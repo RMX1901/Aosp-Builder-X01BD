@@ -2,7 +2,7 @@ env:
     MANIFEST: https://github.com/CherishOS/android_manifest.git -b tiramisu
     DEVICE: RMX1901
     OEM: realme
-    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b cherish
+    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901.git -b cherish
     DT_PATH: device/realme/RMX1901
     VT_LINK: https://github.com/SlicKker-001/vendor_realme_RMX1901.git  -b 13
     KT_LINK: https://github.com/ashim-anwar/kernel_realme_RMX1901.git -b x.337-KSU
