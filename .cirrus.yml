@@ -1,18 +1,18 @@
 env:
-    MANIFEST: https://github.com/Octavi-Staging/manifest.git -b thirteen
+    MANIFEST: https://github.com/CherishOS/android_manifest.git -b tiramisu
     DEVICE: RMX1901
     OEM: realme
-    DT_LINK: https://github.com/shravansayz/device_realme_RMX1901_T.git -b octavi
+    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b cherish
     DT_PATH: device/realme/RMX1901
     VT_LINK: https://github.com/SlicKker-001/vendor_realme_RMX1901.git  -b 13
     KT_LINK: https://github.com/ashim-anwar/kernel_realme_RMX1901.git -b x.337-KSU
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
-    LUNCH_COMBO: octavi_${DEVICE}-userdebug
-    OUTPUT: O*.zip
+    LUNCH_COMBO: cherish_${DEVICE}-userdebug
+    OUTPUT: C*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[!f1d6be2955abc0e707d19e911e742d164c53d4abd3136d5cda5bc0c25a09e9a7f8668ea263e382612f3f8de8f51a6413!]
-    URI: https://fleur.shazuxd7.workers.dev/0:/ci/ccache.tar.gz
+    URI: https://sourceforge.net/projects/realme-x-1901/files/ccache/octavi/ccache.tar.gz/download
     ROM_U: 1
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
