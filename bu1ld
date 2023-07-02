@@ -1,12 +1,14 @@
 #!/bin/bash
 cd ~/work/device/realme/RMX1901/prebuilts
+
+cd ~/work
+bash ~/work/device/realme/RMX1901/pat*/pat*.sh
 . build/envsetup.sh
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 100G
+ccache -M 60G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-$EXTRA_CMD
-brunch RMX1901
+make bacon -j8 & sleep 90m
