@@ -1,6 +1,5 @@
 #!/bin/bash
-
-cd ~/work
+cd ~/work/device/realme/RMX1901/prebuilts
 . build/envsetup.sh
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -10,4 +9,4 @@ ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
 $EXTRA_CMD
-mka bacon
+make $TARGET -j8 & sleep 90m
