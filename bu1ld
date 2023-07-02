@@ -9,4 +9,4 @@ ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
 $EXTRA_CMD
-make $TARGET -j8 & sleep 90m
+mka bacon -j8 & sleep 90m
