@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/PixelOS-AOSP/manifest.git -b thirteen
+    MANIFEST: https://github.com/SkylineUI/manifest -b aosp-13
     DEVICE: RMX1901
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901.git -b 13
@@ -9,7 +9,7 @@ env:
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
     LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: P*.zip
+    OUTPUT: S*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[!f1d6be2955abc0e707d19e911e742d164c53d4abd3136d5cda5bc0c25a09e9a7f8668ea263e382612f3f8de8f51a6413!]
     URI: https://fleur.shazuxd7.workers.dev/0:/ci/ccache.tar.gz
