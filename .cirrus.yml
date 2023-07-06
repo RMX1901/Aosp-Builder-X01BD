@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/SkylineUI/manifest -b aosp-13
+    MANIFEST: https://github.com/Octavi-Staging/manifest.git -b thirteen
     DEVICE: RMX1901
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901.git -b 13
@@ -8,8 +8,8 @@ env:
     KT_LINK: https://github.com/ashim-anwar/kernel_realme_RMX1901.git -b x.337-KSU
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
-    LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: S*.zip
+    LUNCH_COMBO: octavi_${DEVICE}-userdebug
+    OUTPUT: O*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[!f1d6be2955abc0e707d19e911e742d164c53d4abd3136d5cda5bc0c25a09e9a7f8668ea263e382612f3f8de8f51a6413!]
     URI: https://github.com/exampleurl
@@ -18,7 +18,7 @@ task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 240m
   container:
-      image: ghcr.io/satorugojo2k23/ubuntu:latest
+      image: apon77/aosp:cirrus
       cpu: 8
       memory: 32G
 
