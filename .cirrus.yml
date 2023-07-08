@@ -12,8 +12,8 @@ env:
     OUTPUT: O*.zip
     CLO: X01BD:ccache
     CLO_1: ENCRYPTED[!f1d6be2955abc0e707d19e911e742d164c53d4abd3136d5cda5bc0c25a09e9a7f8668ea263e382612f3f8de8f51a6413!]
-    URI: idk.com
-    ROM_U: 0
+    URI: https://sourceforge.net/projects/fleur/files/ccache/Octavi/ccache.tar.gz/download
+    ROM_U: 1
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 240m
